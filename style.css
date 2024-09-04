@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('./fonts/TTLakes-Regular.eot') format('embedded-opentype'),
+        url('./fonts/TTLakes-Regular.woff') format('woff'),
+        url('./fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-DemiBold.eot');
+    src: local('TT Lakes DemiBold'), local('TTLakes-DemiBold'),
+        url('./fonts/TTLakes-DemiBold.eot') format('embedded-opentype'),
+        url('./fonts/TTLakes-DemiBold.woff') format('woff'),
+        url('./fonts/TTLakes-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: TT Lakes;
+    font-size: 18px;
+}
+
+.container {
+    background-color: rgb(243, 243, 243);
+    width: 320px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    box-shadow: 15px 0px 30px rgb(121, 121, 121);
+}
+
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.container button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF3E79;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background: #ff91b2;
+}
+
+.container__close-img ,.container__finder-img,
+.container__phone-img, .container__chat-img,
+.container__profile-img {
+    width: 60%;
+}
+
+.container__logo {
+    position: relative;
+    right: 30px;
+}
+
+.container__logo-img {
+    width: 97px;
+}
+
+.container__menu-list a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 10px 0px 10px 20px;
+    border-left: 4px solid #41f6d800;
+}
+
+.container__menu-list a:hover,
+.container__menu-list a:active {
+    color: rgb(119, 119, 119);
+    border-left: 4px solid #41F6D7;
+}
+
+.container__contacts {
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.container__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.container__contact-links a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.container__link-email {
+    font-size: 14px;
+}
+
+.container__link-num {
+    font-size: 22px;
+}
+
+.container__lang {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 50px;
+}
+
+.container__lang a {
+    text-decoration: none;
+    color: black;
+}
+
+.container__lang a:hover,
+.container__lang a:active {
+    text-decoration: none;
+    color: rgb(158, 157, 157);
+}
